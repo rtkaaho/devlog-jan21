@@ -38,8 +38,8 @@ export default function Home() {
         <a href="/star-wars" className="dark:text-gray-50">Star Wars</a>
       </nav>
       <div className="flex-grow flex flex-col items-center justify-center">
-        <h1 className="text-6xl dark:text-gray-50 font-bold mb-8">Star Wars Characters</h1>
-        <div className="dark:bg-gray-800 w-96 rounded-lg py-2">
+        <h1 className="text-6xl text-gray-900 dark:text-gray-50 font-bold mb-8">Star Wars Characters</h1>
+        <div className="bg-gray-100 dark:bg-gray-800 w-96 rounded-lg py-2">
           {people.results.map((person) => {
             // split the url
             const personUrlParts = person.url.split("/").filter(Boolean);
@@ -48,9 +48,9 @@ export default function Home() {
             const personId = personUrlParts[personUrlParts.length - 1];
             return (
               <Link key={person.name} href={`/people/${personId}`}>
-                <div key={person.name} className="transition-colors duration-100 p-4 hover:bg-gray-700 cursor-pointer">
-                  <h5 className="dark:text-gray-50 font-bold">{person.name}</h5>
-                  <p className="dark:text-gray-200">{person.gender}</p>
+                <div key={person.name} className="transition-colors duration-100 p-4 hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer">
+                  <h5 className="text-gray-900 dark:text-gray-50 font-bold">{person.name}</h5>
+                  <p className="text-gray-900 dark:text-gray-200">{person.gender}</p>
                 </div>
               </Link>
             );

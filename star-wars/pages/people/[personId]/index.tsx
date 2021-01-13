@@ -52,15 +52,15 @@ export default function Person() {
       <div className="flex-grow flex flex-col items-center justify-center">
         <h1 className="text-6xl dark:text-gray-50 font-bold mb-8">{person.name}</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4   ">
-          <div className="p-4 bg-gray-200 rounded-lg dark:bg-gray-800">
+          <div className="p-4 bg-gray-100 rounded-lg dark:bg-gray-800">
             <h3 className="text-gray-900 dark:text-gray-50 font-bold text-xl mb-2">Gender</h3>
             <p className="text-gray-900 dark:text-gray-50">{person.gender === "n/a" ? "Not Applicable" : person.gender}</p>
           </div>
-          <div className="p-4 bg-gray-200 rounded-lg dark:bg-gray-800">
+          <div className="p-4 bg-gray-100 rounded-lg dark:bg-gray-800">
             <h3 className="text-gray-900 dark:text-gray-50 font-bold text-xl mb-2">Eye Color</h3>
             <p className="text-gray-900 dark:text-gray-50">{person.eyeColor}</p>
           </div>
-          <div className="p-4 bg-gray-200 rounded-lg dark:bg-gray-800">
+          <div className="p-4 bg-gray-100 rounded-lg dark:bg-gray-800">
             <h3 className="text-gray-900 dark:text-gray-50 font-bold text-xl mb-2">Height</h3>
             <p className="text-gray-900 dark:text-gray-50">{person.height}</p>
           </div>

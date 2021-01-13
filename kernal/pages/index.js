@@ -12,10 +12,10 @@ export default function Home() {
         <a href="/star-wars" className="dark:text-gray-50">Star Wars</a>
       </nav>
       <div className="flex flex-col h-full dark:bg-gray-800">
-        <div className="h-12 flex-shrink-0 bg-gray-200 dark:bg-gray-700 border-b border-solid border-gray-300 dark:border-gray-700" />
+        <div className="h-12 flex-shrink-0 bg-gray-100 dark:bg-gray-700 border-b border-solid border-gray-300 dark:border-gray-700" />
         <div className="flex flex-col flex-grow p-8">
-          <div className="h-8 w-24 rounded-md bg-gray-200 dark:bg-gray-700 mb-8" />
-          <div className="flex-grow w-full rounded-md bg-gray-200 dark:bg-gray-700" />
+          <div className="h-8 w-24 rounded-md bg-gray-100 dark:bg-gray-700 mb-8" />
+          <div className="flex-grow w-full rounded-md bg-gray-100 dark:bg-gray-700" />
         </div>
       </div>
     </div>
