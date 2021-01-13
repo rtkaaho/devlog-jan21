@@ -4,7 +4,7 @@ set -Eeuo pipefail
 set -x
 
 # cd to the api dir
-cd ~/wolf/devlog-jan21/apis
+cd ~/wolf/devlog-jan21/star-wars/api
 
 # remove the old gen
 rm -rf ./star-wars

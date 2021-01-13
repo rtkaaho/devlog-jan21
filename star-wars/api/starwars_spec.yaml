@@ -1,0 +1,145 @@
+openapi: "3.0.0"
+info:
+  version: "0.2"
+  title: Star Wars API
+servers:
+  - url: https://swapi.dev
+paths:
+  /api/people:
+    get:
+      operationId: getPeople
+      description: Gets all of the people in star wars
+      responses:
+        200:
+          description: All of the people in star wars
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Person'
+  /api/people/{person_id}:
+    get:
+      operationId: getPerson
+      parameters:
+        - name: person_id
+          in: path
+          required: true
+          description: The person to get
+          schema:
+            type: number
+      description: Gets a single person
+      responses:
+        200:
+          description: A single person
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Person'
+
+  /api/planets/{planet_id}:
+    get:
+      operationId: getPlanet
+      parameters:
+        - name: planet_id
+          in: path
+          required: true
+          description: The planet to get
+          schema:
+            type: number
+      description: Gets a single planet
+      responses:
+        200:
+          description: A single plant
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Planet'
+
+components:
+  schemas:
+    Person:
+      type: object
+      properties:
+        name:
+          type: string
+        birth_year:
+          type: string
+        eye_color:
+          type: string
+        gender:
+          type: string
+        hair_color:
+          type: string
+        height:
+          type: string
+        mass:
+          type: string
+        skin_color:
+          type: string
+        homeworld:
+          type: string
+        films:
+          type: array
+          items:
+            type: string
+        species:
+          type: array
+          items:
+            type: string
+        starships:
+          type: array
+          items:
+            type: string
+        vehicles:
+          type: array
+          items:
+            type: string
+        url:
+          type: string
+        created:
+          type: string
+        edited:
+          type: string
+
+    Planet:
+      type: object
+      properties:
+        name:
+          type: string
+        diameter:
+          type: string
+        rotation_period:
+          type: string
+        orbital_period:
+          type: string
+        gravity:
+          type: string
+        population:
+          type: string
+        climate:
+          type: string
+        terrain:
+          type: string
+        surface_water:
+          type: string
+        residents:
+          type: array
+          items:
+            type: string
+        films:
+          type: array
+          items:
+            type: string
+        url:
+          type: string
+        created:
+          type: string
+        edited:
+          type: string
+
+
+
