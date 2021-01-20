@@ -3,12 +3,12 @@
 ### Starting the Demo
 
 1. Start the parent server
-  - change directories to the `kernal` dir
-  - run `npm run dev`
+    - change directories to the `kernal` dir
+    - run `npm run dev`
 2. Start the triage server
-  - change directories to the `triage` dir
-  - run `npm run dev`
+    - change directories to the `triage` dir
+    - run `npm run dev`
 3. Start the star wars server
-  - change directories to the 'star-wars` dir
-  - run `npm run dev`
+    - change directories to the 'star-wars` dir
+    - run `npm run dev`
 4. In a browser, navigate to `http://localhost:3000` and start playing around.
